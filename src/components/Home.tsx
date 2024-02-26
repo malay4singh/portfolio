@@ -1,6 +1,6 @@
 function Home(){
         return(
-                <div className="flex gap-[100px] w-[90vw] justify-center h-screen max-[600px]:w-screen max-[600px]:h-[90vh] max-[600px]:flex-col max-[600px]:items-center">
+                <div className="flex gap-[100px] w-[90vw] justify-center h-screen max-[600px]:gap-12 max-[600px]:w-screen max-[600px]:h-[90dvh] max-[600px]:flex-col max-[600px]:items-center">
                         <div className="flex justify-center min-[601px]:h-screen items-center">
                                 <img className="rounded-[50%] border-[16px] border-[#156064] w-[250px] min-[601px]:w-[330px] min-[1700px]:w-[400px]" src="avatar.jpg" />
                         </div>
@@ -10,7 +10,7 @@ function Home(){
                                         <div>
                                                 HI THERE, I'M
                                         </div>
-                                        <div className="text-3xl overflow-hidden">
+                                        <div className="text-3xl">
                                                 <span className="text-3xl text-[#156064]">MALAY</span> SINGH        
                                         </div>        
                                 </div>

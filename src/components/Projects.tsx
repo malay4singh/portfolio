@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard'
 
 function Projects(){
         return(
-                <div className='h-screen w-[90wv] flex items-center justify-center max-[600px]:w-screen max-[600px]:h-[90vh] max-[1200px]:items-start scrollable'>
+                <div className='h-screen w-[90wv] flex items-center justify-center max-[600px]:w-screen max-[600px]:h-[90dvh] max-[1200px]:items-start scrollable'>
                         <div className='w-[70%] flex flex-col gap-6 '>
                                 <div className='text-3xl'>
                                         My Projects

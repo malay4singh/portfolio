@@ -2,7 +2,7 @@
 
 function About(){
         return(
-                <div className="h-screen w-[90vw] flex justify-center items-center max-[600px]:w-screen max-[600px]:h-[90vh] max-[600px]:items-start scrollable">
+                <div className="h-screen w-[90vw] flex justify-center items-center max-[600px]:w-screen max-[600px]:h-[90dvh] max-[600px]:items-start scrollable">
                         <div className="text-xs flex flex-col w-[80%]">
                                 <div className="flex flex-col gap-4">
                                         <div className="text-3xl overflow-hidden">About Me</div>
