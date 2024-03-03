@@ -4,7 +4,7 @@ function About(){
                         <div className="text-xs flex flex-col w-[80%]">
                                 <div className="flex flex-col gap-4">
                                         <div className="text-3xl">About Me</div>
-                                        <div className="text-sm">Hey, I'm a computer science engineer who loves messing around with computers. I find joy in tweaking operating systems, playing with hardware, and getting creative with web development. Arch Linux is my go-to - love the hands-on, customizable vibe. <br />If something involves coding, system stuff, and a bit of hardware wizardry, count me in!</div>
+                                        <div className="text-sm">I'm a Computer Science engineer passionate about customizing operating systems, exploring hardware, and creating innovative web solutions. I specialize in Linux for its hands-on, customizable nature.<br />As a student, I bring both theoretical knowledge and practical experience, driven by curiosity. I'm excited to collaborate on projects and contribute to groundbreaking initiatives in the field.</div>
 
                                         <div className="flex max-[600px]:flex-col max-[600px]:gap-4">
                                                 <div className="relative w-[50%]">

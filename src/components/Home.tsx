@@ -16,7 +16,7 @@ function Home(){
                                 </div>
 
                                 <div>
-                                        A Full-Stack Web Developer passionate about creating interactive applications and experiences on the web.
+                                        A B.Tech CSE student aspiring to become a Full-Stack Web Developer and create interactive experiences on the web.
                                 </div>
 
                                 <div className="flex gap-7">
