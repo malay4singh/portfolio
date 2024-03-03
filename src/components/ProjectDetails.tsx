@@ -21,12 +21,12 @@ function ProjectDetails(props: ProjectDetailsProps){
 
         return(
                 <div className={`p-7 border-2 border-black absolute w-[75%] h-[30%] ${props.visibility ? "visible" : "invisible"} bg-[#156064] text-[#FFFFF0] rounded-lg`}>
-                        <div className="text-3xl">
+                        <div className="text-2xl ">
                                 {props.projectDetails.name}
                         </div>
 
                         <div className="flex items-center justify-between">
-                                <div className="mt-6 text-xl">
+                                <div className="mt-4 text-lg">
                                         Tech Used
                                         <ul className="list-disc list-inside ml-4">
                                                 {props.projectDetails.tech.map(item =>(
@@ -39,7 +39,7 @@ function ProjectDetails(props: ProjectDetailsProps){
                         </div>
                         
 
-                        <div className="mt-6 text-xl">
+                        <div className="mt-4 text-lg">
                                 Features
                                 <ul className="list-disc list-inside ml-4">
                                         {props.projectDetails.features.map(item =>(
@@ -50,11 +50,11 @@ function ProjectDetails(props: ProjectDetailsProps){
                        
 
                         {props.projectDetails.name !== "My Portfolio" &&
-                                <div className="border-2 border-black text-black bg-[#FFFFF0] px-1 rounded-md absolute bottom-[30px] right-[340px] hover:cursor-pointer transition ease-in-out hover:shadow-2xl hover:scale-110 duration-400">
+                                <div className="border-2 border-black text-black bg-[#FFFFF0] px-1 rounded-md absolute bottom-[30px] right-[340px] min-[1700px]:right-[390px] hover:cursor-pointer transition ease-in-out hover:shadow-2xl hover:scale-110 duration-400">
                                         <a href={props.projectDetails.link}>Open</a>
                                 </div>
                         }
-                        <div className="border-2 border-black text-black bg-[#FFFFF0] px-1 rounded-md absolute bottom-[30px] right-[150px] hover:cursor-pointer transition ease-in-out hover:shadow-2xl hover:scale-110 duration-400">
+                        <div className="border-2 border-black text-black bg-[#FFFFF0] px-1 rounded-md absolute bottom-[30px] right-[150px] min-[1700px]:right-[160px] hover:cursor-pointer transition ease-in-out hover:shadow-2xl hover:scale-110 duration-400">
                                 <a href={props.projectDetails.code} target="_blank">Source Code</a>
                         </div>
                         <div onClick={hideDetails} className="border-2 border-black text-black bg-[#FFFFF0] px-1 rounded-md absolute bottom-[30px] right-[40px] hover:cursor-pointer transition ease-in-out hover:shadow-2xl hover:scale-110 duration-400">
