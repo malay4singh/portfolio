@@ -12,7 +12,7 @@ function Projects(){
                         link: "https://malaysingh.com/portfolio",
                         code: "https://www.github.com/malay4singh/portfolio.git",
                         tech: ['JavaScript', 'TypeScript', 'React.js', 'Express.js', 'Tailwind CSS'],
-                        features: ['Simple and minimalistic design', 'Smooth and precise transitions', 'Hosted on AWS EC2', 'Express.js back-end serving multiple apps using the same server']
+                        features: ['Express.js back-end serving multiple apps using the same server', 'Hosted on AWS EC2', 'Simple and minimalistic design', 'Smooth and precise transitions']
                 },
                 {
                         name: "E-Commerce",
