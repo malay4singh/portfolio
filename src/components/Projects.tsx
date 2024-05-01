@@ -17,7 +17,7 @@ function Projects(){
                 {
                         name: "E-Commerce",
                         img: "e-commerce.png",
-                        link: "http://e-commerce-malaysingh.com",
+                        link: "http://e-commerce.malaysingh.com",
                         code: "https://www.github.com/malay4singh/e-commerce.git",
                         tech: ['EJS', 'Express.js', 'MongoDB', 'Passport.js', 'Tailwind CSS'],
                         features: ['Full-Stack project using Express.js back-end', 'MongoDB Atlas Database', 'Separate Authorizations for Buyer and Seller', 'Fully Responsive Design']
