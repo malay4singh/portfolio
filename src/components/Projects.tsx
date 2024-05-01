@@ -9,7 +9,7 @@ function Projects(){
                 {
                         name: "My Portfolio",
                         img: "portfolio.png",
-                        link: "https://malaysingh.com/portfolio",
+                        link: "http://www.malaysingh.com",
                         code: "https://www.github.com/malay4singh/portfolio.git",
                         tech: ['JavaScript', 'TypeScript', 'React.js', 'Express.js', 'Tailwind CSS'],
                         features: ['Express.js back-end serving multiple apps using the same server', 'Hosted on AWS EC2', 'Simple and minimalistic design', 'Smooth and precise transitions']
@@ -17,7 +17,7 @@ function Projects(){
                 {
                         name: "E-Commerce",
                         img: "e-commerce.png",
-                        link: "https://malaysingh.com/e-commerce",
+                        link: "http://e-commerce-malaysingh.com",
                         code: "https://www.github.com/malay4singh/e-commerce.git",
                         tech: ['EJS', 'Express.js', 'MongoDB', 'Passport.js', 'Tailwind CSS'],
                         features: ['Full-Stack project using Express.js back-end', 'MongoDB Atlas Database', 'Separate Authorizations for Buyer and Seller', 'Fully Responsive Design']
@@ -25,7 +25,7 @@ function Projects(){
                 {
                         name: "Marketplace",
                         img: "marketplace.png",
-                        link: "https://malaysingh.com/marketplace",
+                        link: "http://marketplace.malaysingh.com",
                         code: "https://www.github.com/malay4singh/marketplace.git",
                         tech: ['JavaScript', 'jQuery', 'HTML', 'CSS'],
                         features: ['Dynamic Front-end using API calls', 'DOM Manipulation using jQuery', 'API Provided by dummyjson.com']
@@ -33,7 +33,7 @@ function Projects(){
                 {
                         name: "To Do List",
                         img: "to-do-list.png",
-                        link: "https://malaysingh.com/to-do-list",
+                        link: "http://to-do-list.malaysingh.com",
                         code: "https://www.github.com/malay4singh/to-do-list.git",
                         tech: ['JavaScript', 'jQuery', 'HTML', 'CSS'],
                         features: ['Custom text inputs as to-do items', 'Task completion status', 'Re-ordering items']
@@ -41,7 +41,7 @@ function Projects(){
                 {
                         name: "Medium Clone",
                         img: "medium-clone.png",
-                        link: "https://malaysingh.com/medium-clone",
+                        link: "http://medium-clone.malaysingh.com",
                         code: "https://www.github.com/malay4singh/medium-clone.git",
                         tech: ['HTML', 'CSS'],
                         features: ['Static Front-end clone of medium.com', 'CSS Styling tricks such as flexbox, sticky divs etc.']
