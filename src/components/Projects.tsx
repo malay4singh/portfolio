@@ -9,23 +9,31 @@ function Projects(){
                 {
                         name: "My Portfolio",
                         img: "portfolio.png",
-                        link: "http://www.malaysingh.com",
+                        link: "https://www.malaysingh.com",
                         code: "https://www.github.com/malay4singh/portfolio.git",
-                        tech: ['JavaScript', 'TypeScript', 'React.js', 'Express.js', 'Tailwind CSS'],
-                        features: ['Express.js back-end serving multiple apps using the same server', 'Hosted on AWS EC2', 'Simple and minimalistic design', 'Smooth and precise transitions']
+                        tech: ['JavaScript', 'TypeScript', 'React.js', 'nginx', 'Tailwind CSS'],
+                        features: ['Reverse proxy and static serving with nginx', 'Hosted on AWS EC2', 'Simple and minimalistic design', 'Smooth and precise transitions']
+                },
+                {
+                        name: "Shop Sphere",
+                        img: "shop-sphere.png",
+                        link: "https://shopsphere.malaysingh.com",
+                        code: "https://www.github.com/malay4singh/shop-sphere.git",
+                        tech: ['TypeScript', 'React.js', 'Express.js', 'Material UI', 'Razorpay'],
+                        features: ['Full-Stack project using React.js and Express.js', 'Role-based Authorization', 'Payment Gateway', 'Authentication and Validation']
                 },
                 {
                         name: "E-Commerce",
                         img: "e-commerce.png",
-                        link: "http://e-commerce.malaysingh.com",
+                        link: "https://e-commerce.malaysingh.com",
                         code: "https://www.github.com/malay4singh/e-commerce.git",
-                        tech: ['EJS', 'Express.js', 'MongoDB', 'Passport.js', 'Tailwind CSS'],
-                        features: ['Full-Stack project using Express.js back-end', 'MongoDB Atlas Database', 'Separate Authorizations for Buyer and Seller', 'Fully Responsive Design']
+                        tech: ['EJS', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+                        features: ['Full-Stack project using Express.js and EJS', 'MongoDB Atlas Database', 'Separate Authorizations for Buyer and Seller', 'Fully Responsive Design']
                 },
                 {
                         name: "Marketplace",
                         img: "marketplace.png",
-                        link: "http://marketplace.malaysingh.com",
+                        link: "https://marketplace.malaysingh.com",
                         code: "https://www.github.com/malay4singh/marketplace.git",
                         tech: ['JavaScript', 'jQuery', 'HTML', 'CSS'],
                         features: ['Dynamic Front-end using API calls', 'DOM Manipulation using jQuery', 'API Provided by dummyjson.com']
@@ -33,7 +41,7 @@ function Projects(){
                 {
                         name: "To Do List",
                         img: "to-do-list.png",
-                        link: "http://to-do-list.malaysingh.com",
+                        link: "https://to-do-list.malaysingh.com",
                         code: "https://www.github.com/malay4singh/to-do-list.git",
                         tech: ['JavaScript', 'jQuery', 'HTML', 'CSS'],
                         features: ['Custom text inputs as to-do items', 'Task completion status', 'Re-ordering items']
@@ -41,7 +49,7 @@ function Projects(){
                 {
                         name: "Medium Clone",
                         img: "medium-clone.png",
-                        link: "http://medium-clone.malaysingh.com",
+                        link: "https://medium-clone.malaysingh.com",
                         code: "https://www.github.com/malay4singh/medium-clone.git",
                         tech: ['HTML', 'CSS'],
                         features: ['Static Front-end clone of medium.com', 'CSS Styling tricks such as flexbox, sticky divs etc.']
