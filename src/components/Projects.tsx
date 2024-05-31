@@ -23,14 +23,6 @@ function Projects(){
                         features: ['Full-Stack project using React.js and Express.js', 'Role-based Authorization', 'Payment Gateway', 'Authentication and Validation']
                 },
                 {
-                        name: "E-Commerce",
-                        img: "e-commerce.png",
-                        link: "https://e-commerce.malaysingh.com",
-                        code: "https://www.github.com/malay4singh/e-commerce.git",
-                        tech: ['EJS', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-                        features: ['Full-Stack project using Express.js and EJS', 'MongoDB Atlas Database', 'Separate Authorizations for Buyer and Seller', 'Fully Responsive Design']
-                },
-                {
                         name: "Marketplace",
                         img: "marketplace.png",
                         link: "https://marketplace.malaysingh.com",
