@@ -7,7 +7,7 @@ function Container(){
 
         return(
                 <div className="flex max-[600px]:flex-col-reverse">
-                        <Navbar setNavigation={setNavigation} />
+                        <Navbar setNavigation={setNavigation} navigation={navigation} />
                         
                         <Main navigation={navigation}/>
                 </div>

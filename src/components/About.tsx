@@ -82,7 +82,7 @@ function About(){
 
                                         <div className="flex flex-col gap-3">
                                                 <div className="text-3xl">About Me</div>
-                                                <div className="text-sm">I'm a Computer Science engineer passionate about customizing operating systems, exploring hardware, and creating innovative web solutions. I specialize in Linux for its hands-on, customizable nature.<br />As a student, I bring both theoretical knowledge and practical experience, driven by curiosity. I'm excited to collaborate on projects and contribute to groundbreaking initiatives in the field.</div>
+                                                <div className="text-sm">I'm a Computer passionate about customizing operating systems, exploring hardware, and creating innovative web solutions. I specialize in Linux for its hands-on, customizable nature.<br />As a student, I bring both theoretical knowledge and practical experience, driven by curiosity. I'm excited to collaborate on projects and contribute to groundbreaking initiatives in the field.</div>
                                         </div>
 
                                         <div className="flex max-[600px]:flex-col max-[600px]:gap-4">
