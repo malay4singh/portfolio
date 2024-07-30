@@ -69,12 +69,12 @@ function Contact() {
 
                                                 <div className="text-3xl mb-2">Contact Me</div>
 
-                                                <div className="flex justify-around">
-                                                        <div className="flex text-xl gap-2 select-all">
-                                                                <img src="phone.svg" width={'45px'} />+91 9312711492
+                                                <div className="flex justify-around max-[600px]:flex-col max-[600px]:gap-3">
+                                                        <div className="flex text-xl gap-2 select-all max-[600px]:text-base">
+                                                                <img className='w-[45px] max-[600px]:w-[25px]' src="phone.svg" />+91 9312711492
                                                         </div>
-                                                        <div className="flex text-xl gap-2 select-all">
-                                                                <img src="mail.svg" width={'45px'} />malay4singh@gmail.com
+                                                        <div className="flex text-xl gap-2 select-all max-[600px]:text-base">
+                                                                <img className='w-[45px] max-[600px]:w-[25px]' src="mail.svg" />malay4singh@gmail.com
                                                         </div>
                                                 </div>
 
@@ -83,7 +83,7 @@ function Contact() {
                                         <div className="flex flex-col gap-4">
                                                 <div className="text-3xl pb-2">Or Leave a Message....</div>
 
-                                                <form onSubmit={formik.handleSubmit} className='flex flex-col w-[80%] mx-auto gap-2'>
+                                                <form onSubmit={formik.handleSubmit} className='flex flex-col w-[80%] mx-auto gap-2 max-[600px]:w-full max-[600px]:gap-4'>
                                                         <TextField
                                                                 label="Name*"
                                                                 variant="outlined"
