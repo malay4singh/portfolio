@@ -20,7 +20,7 @@ function ProjectDetails(props: ProjectDetailsProps){
         }
 
         return(
-                <div className={`p-7 border-2 border-black absolute w-[75%] h-[30%] ${props.visibility ? "visible" : "invisible"} bg-[#156064] text-[#FFFFF0] rounded-lg max-[600px]:w-[25%] max-[600px]:h-fit max-[600px]:overflow-y-scroll`}>
+                <div className={`p-7 border-2 border-black absolute w-[75%] h-[20%] ${props.visibility ? "visible" : "invisible"} bg-[#156064] text-[#FFFFF0] rounded-lg max-[600px]:w-[25%] max-[600px]:h-fit max-[600px]:overflow-y-scroll`}>
                         
                         <div className="text-2xl ">
                                 {props.projectDetails.name}

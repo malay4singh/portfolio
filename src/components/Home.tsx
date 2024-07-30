@@ -19,13 +19,18 @@ function Home(){
                                         A B.Tech CSE student aspiring to become a Full-Stack Web Developer and create interactive experiences on the web.
                                 </div>
 
-                                <div className="flex gap-7">
-                                        <div>
-                                                <a href="https://github.com/malay4singh" target="_blank"><img src="github.svg" width='47px' /></a>
+                                <div className="flex gap-7 h-[50px] items-center">
+                                        <div className="h-[100%]">
+                                                <a href="https://github.com/malay4singh" target="_blank"><img className="h-[100%]" src="github.svg" /></a>
                                         </div>
-                                        <div>
-                                                <a href="https://www.linkedin.com/in/malay-singh-15b722274/" target="_blank"><img src="linkedin.svg" width='47px' /></a>
+                                        <div className="h-[100%]">
+                                                <a href="https://www.linkedin.com/in/malay-singh-15b722274/" target="_blank"><img className="h-[100%]" src="linkedin.svg" /></a>
                                         </div>
+                                        <a className="h-full flex items-center" href="https://drive.google.com/file/d/15esulUdejfbUMK6iIHqQJPGsBVbTkBR8/view?usp=sharing" target="_blank">
+                                                <div className="px-1 rounded bg-[#156064] text-[#fffff0] flex gap-2 h-[90%] items-center">
+                                                        RESUME <img src="link.svg" width={'20px'} />
+                                                </div>
+                                        </a>
                                 </div>
                         </div>
                 </div>
