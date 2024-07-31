@@ -16,6 +16,7 @@ function Contact() {
 
         const [alert, setAlert] = useState<string>("");
         const [isDisplayed, setIsDisplayed] = useState<boolean>(false);
+        const [icon, setIcon] = useState<string>('send.svg');
 
         const initialValues: Message = {
                 name: "",
@@ -40,6 +41,7 @@ function Contact() {
 
                                 setAlert("Message Sent Successfully");
                                 setIsDisplayed(true);
+                                setIcon('check.svg');
 
                                 resetForm({
                                         values: {
@@ -52,12 +54,14 @@ function Contact() {
                         } catch (err) {
                                 setAlert("Couldn't Send Message");
                                 setIsDisplayed(true);
+                                setIcon('cross.svg');
                         }
                 },
         });
 
         const removeMessage = () => {
                 setIsDisplayed(false);
+                setIcon('send.svg');
         }
 
         return (
@@ -126,7 +130,7 @@ function Contact() {
                                                                 error={formik.touched.message && Boolean(formik.errors.message)}
                                                         />
 
-                                                        <button className='bg-[#156064] w-[fit-content] py-1 px-2 rounded text-[#fffff0] flex item-center gap-2' type='submit'><img src="send.svg" width={'20px'} />SEND</button>
+                                                        <button className='bg-[#156064] w-[fit-content] py-1 px-2 rounded text-[#fffff0] flex item-center gap-2' type='submit'><img src={icon} width={'20px'} />SEND</button>
                                                 </form>
                                         </div>
 
