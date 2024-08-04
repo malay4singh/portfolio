@@ -22,5 +22,5 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React.js" width="40" height="40" />
   <img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" width="40" height="40" />
   <img src="https://github.com/devicons/devicon/blob/master/icons/nginx/nginx-original.svg" title="nginx" width="40" height="40" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TypeScript" width="40" height="40" />
+  <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original.svg" title="TailWindCSS" width="40" height="40" />
 </div>
