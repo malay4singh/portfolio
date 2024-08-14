@@ -20,7 +20,7 @@ function ProjectDetails(props: ProjectDetailsProps){
         }
 
         return(
-                <div className={`p-7 border-2 border-black absolute transform transition-transform duration-300 ease-in-out ${props.visibility ? "scale-100" : "scale-0"} w-[75%] h-[17%] bg-[#156064] text-[#FFFFF0] rounded-lg max-[600px]:w-[16%] max-[600px]:h-fit max-[600px]:overflow-y-scroll`}>
+                <div className={`p-7 border-2 border-black absolute transform transition-transform duration-300 ease-in-out ${props.visibility ? "scale-100" : "scale-0"} w-[75%] h-[90%] bg-[#156064] text-[#FFFFF0] rounded-lg max-[600px]:w-[80%] max-[600px]:h-fit max-[600px]:overflow-y-scroll`}>
                         
                         <div className="text-2xl">
                                 {props.projectDetails.name}

@@ -90,7 +90,7 @@ function About(){
 
                                                         <div className="text-3xl">Skills</div>
 
-                                                        <div className="h-[fit-content] w-full flex justify-around max-[600px]:flex-col max-[600px]:items-center max-[600px]:h-[160dvh]">
+                                                        <div className="h-[fit-content] w-full flex justify-around max-[600px]:justify-start max-[600px]:gap-5 max-[600px]:flex-col max-[600px]:items-center">
                                                                 {categories.map(category =>(
                                                                         <SkillContainer category={category} />
                                                                 ))}
