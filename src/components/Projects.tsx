@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import ProjectCard from './ProjectCard'
 import ProjectDetails from './ProjectDetails';
 
@@ -60,14 +59,14 @@ function Projects(){
 
         return(
                 <div className='h-screen w-[90wv] flex items-center justify-center max-[600px]:w-screen max-[600px]:h-[90dvh] max-[1200px]:items-start max-[600px]:py-10 scrollable'>
-                        <div className='w-[75%] flex flex-col gap-6 '>
-                                <div className='text-3xl'>
+                        <div className='w-[75%] flex flex-col gap-6 z-0'>
+                                <div className={`text-3xl ${visibility ? "invisible" : "visible"}`}>
                                         My Projects
                                 </div>
 
                                 <div className='grid-cols-3 grid max-[600px]:grid-cols-1 max-[1200px]:grid-cols-2'>
                                         {projects.map(project =>(
-                                                <ProjectCard project={project} setVisibility={setVisibility} setProjectDetails={setProjectDetails} />
+                                                <ProjectCard project={project} setVisibility={setVisibility} visibility={visibility} setProjectDetails={setProjectDetails} />
                                         ))}
                                 </div>
                         </div>

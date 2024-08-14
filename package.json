@@ -14,7 +14,6 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
-    "@react-spring/web": "^9.7.3",
     "autoprefixer": "^10.4.17",
     "axios": "^1.7.2",
     "formik": "^2.4.6",
