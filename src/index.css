@@ -33,6 +33,8 @@
         }
 }
 
+
+/* -----------------------------Transitions----------------------------- */
 .up-enter {
         opacity: 0;
         transform: translateY(200px);
@@ -72,6 +74,50 @@
 }
 
 .down-exit-active {
+        opacity: 0;
+        transition: opacity 300ms, transform 500ms;
+}
+
+
+.left-enter {
+        opacity: 0;
+        transform: translateX(200px);
+}
+
+.left-enter-active {
+        opacity: 1;
+        transform: translate(0);
+        transition: opacity 300ms, transform 500ms;
+}
+
+.left-exit {
+        opacity: 1;
+        transform: translate(0);
+}
+
+.left-exit-active {
+        opacity: 0;
+        transition: opacity 300ms, transform 500ms;
+}
+
+
+.right-enter {
+        opacity: 0;
+        transform: translateX(-200px);
+}
+
+.right-enter-active {
+        opacity: 1;
+        transform: translate(0);
+        transition: opacity 300ms, transform 500ms;
+}
+
+.right-exit {
+        opacity: 1;
+        transform: translate(0);
+}
+
+.right-exit-active {
         opacity: 0;
         transition: opacity 300ms, transform 500ms;
 }

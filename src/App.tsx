@@ -15,6 +15,8 @@ function App() {
         const [previousPage, setPreviousPage] = useState<number>(0);
         const [currentPage, setCurrentPage] = useState<number>(1);
 
+        const isSmallScreen = window.innerWidth < 601;
+
         useEffect( () => {
                 const setPage = () => {
                         setPreviousPage(currentPage);
@@ -30,7 +32,7 @@ function App() {
                         <Route path="/" element={<Container setCurrentPage={setCurrentPage} />}>
 
                                 <Route path="*" element={<TransitionGroup>
-                                        <CSSTransition key={location.key} timeout={500} classNames={previousPage < currentPage ? "up" : "down"}>
+                                        <CSSTransition key={location.key} timeout={500} classNames={ isSmallScreen ? ( previousPage < currentPage ? "left" : "right" ) : ( previousPage < currentPage ? "up" : "down" ) }>
 
                                                 <Routes location={location}>
                                                         <Route path="/home" element={<Home />} />
