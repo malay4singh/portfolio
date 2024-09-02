@@ -1,7 +1,9 @@
 import { useNavigate, useLocation } from "react-router-dom";
 
 interface IconProps{
-        name: string
+        name: string,
+        setCurrentPage: React.Dispatch<React.SetStateAction<number>>,
+        pageValue: number
 }
 
 function Icon(props: IconProps){
@@ -11,6 +13,7 @@ function Icon(props: IconProps){
         const page = location.pathname.split('/').pop();
 
         const handleClick = ()=>{
+                props.setCurrentPage(props.pageValue);
                 navigate(`/${props.name}`);
         }
 

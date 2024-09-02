@@ -6,19 +6,31 @@ import WorkExperience from "./components/WorkExperience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useEffect, useState } from "react";
 
 function App() {
 
         const location = useLocation();
 
+        const [previousPage, setPreviousPage] = useState<number>(0);
+        const [currentPage, setCurrentPage] = useState<number>(1);
+
+        useEffect( () => {
+                const setPage = () => {
+                        setPreviousPage(currentPage);
+                }
+
+                setPage();
+        }, [currentPage])
+
         return(
                 <Routes>
                         <Route path="/" element={<Navigate to='/home' replace />} />
 
-                        <Route path="/" element={<Container />}>
+                        <Route path="/" element={<Container setCurrentPage={setCurrentPage} />}>
 
                                 <Route path="*" element={<TransitionGroup>
-                                        <CSSTransition key={location.key} timeout={500} classNames="fade">
+                                        <CSSTransition key={location.key} timeout={500} classNames={previousPage < currentPage ? "up" : "down"}>
 
                                                 <Routes location={location}>
                                                         <Route path="/home" element={<Home />} />
