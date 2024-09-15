@@ -28,10 +28,43 @@ function About(){
                                 {
                                         name: "MongoDB",
                                         icon: "https://github.com/devicons/devicon/raw/master/icons/mongodb/mongodb-original.svg"
+                                }
+                        ]
+                },
+                {
+                        title: "Deployment",
+                        skills: [
+                                {
+                                        name: "AWS",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
                                 },
                                 {
-                                        name: "PostgreSQL",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/postgresql/postgresql-original.svg"
+                                        name: "Git",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/git/git-original.svg"
+                                },
+                                {
+                                        name: "Linux",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/linux/linux-original.svg"
+                                },
+                                {
+                                        name: "Vagrant",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/vagrant/vagrant-original.svg"
+                                },
+                                {
+                                        name:"Docker",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/docker/docker-original.svg"
+                                },
+                                {
+                                        name:"Kubernetes",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/kubernetes/kubernetes-original.svg"
+                                },
+                                {
+                                        name: "Jenkins",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/jenkins/jenkins-original.svg"
+                                },
+                                {
+                                        name: "nginx",
+                                        icon: "https://github.com/devicons/devicon/raw/master/icons/nginx/nginx-original.svg"
                                 }
                         ]
                 },
@@ -51,28 +84,8 @@ function About(){
                                         icon: "https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg"
                                 }
                         ]
-                },
-                {
-                        title: "Others",
-                        skills: [
-                                {
-                                        name: "AWS",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-                                },
-                                {
-                                        name: "Git",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/git/git-original.svg"
-                                },
-                                {
-                                        name: "Linux",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/linux/linux-original.svg"
-                                },
-                                {
-                                        name: "nginx",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/nginx/nginx-original.svg"
-                                }
-                        ]
                 }
+                
         ]
 
         return(
