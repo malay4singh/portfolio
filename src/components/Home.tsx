@@ -8,7 +8,7 @@ function Home(){
                         <div className="flex flex-col justify-center gap-4 w-[50%] max-[600px]:w-[80%]">
                                 <div className="flex flex-col gap-1 ">
                                         <div>
-                                                
+                                                Testing
                                         </div>
                                         <div className="text-3xl">
                                                 <span className="text-3xl text-[#156064]">MALAY</span> SINGH        
