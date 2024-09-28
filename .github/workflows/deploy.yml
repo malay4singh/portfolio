@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - client
-      - server
 
 jobs:
   trigger-webhook:
