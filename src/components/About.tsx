@@ -50,7 +50,7 @@ function About(){
                                         icon: `${iconUrl}/linux/linux-original.svg`
                                 },
                                 {
-                                        name: "Bash Script",
+                                        name: "Bash",
                                         icon: `${iconUrl}/bash/bash-original.svg`
                                 },
                                 {
