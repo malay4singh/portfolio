@@ -1,33 +1,36 @@
 import SkillContainer from "./SkillContainer"
 
 function About(){
+
+        const iconUrl = `https://github.com/devicons/devicon/raw/master/icons`;
+
         const categories = [
                 {
                         title: "Web Development",
                         skills: [
                                 {
                                         name: "JavaScript",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg"
+                                        icon: `${iconUrl}/javascript/javascript-original.svg`
                                 },
                                 {
                                         name: "TypeScript",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/typescript/typescript-original.svg"
+                                        icon: `${iconUrl}/typescript/typescript-original.svg`
                                 },
                                 {
                                         name: "Node.js",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/nodejs/nodejs-original-wordmark.svg"
+                                        icon: `${iconUrl}/nodejs/nodejs-original-wordmark.svg`
                                 },
                                 {
                                         name:"Express.js",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/express/express-original.svg"
+                                        icon: `${iconUrl}/express/express-original.svg`
                                 },
                                 {
                                         name: "React.js",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/react/react-original.svg"
+                                        icon: `${iconUrl}/react/react-original.svg`
                                 },
                                 {
                                         name: "MongoDB",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/mongodb/mongodb-original.svg"
+                                        icon: `${iconUrl}/mongodb/mongodb-original.svg`
                                 }
                         ]
                 },
@@ -36,35 +39,39 @@ function About(){
                         skills: [
                                 {
                                         name: "AWS",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                        icon: `${iconUrl}/amazonwebservices/amazonwebservices-plain-wordmark.svg`
                                 },
                                 {
                                         name: "Git",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/git/git-original.svg"
+                                        icon: `${iconUrl}/git/git-original.svg`
                                 },
                                 {
                                         name: "Linux",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/linux/linux-original.svg"
+                                        icon: `${iconUrl}/linux/linux-original.svg`
+                                },
+                                {
+                                        name: "Bash Script",
+                                        icon: `${iconUrl}/bash/bash-original.svg`
                                 },
                                 {
                                         name: "Vagrant",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/vagrant/vagrant-original.svg"
+                                        icon: `${iconUrl}/vagrant/vagrant-original.svg`
                                 },
                                 {
                                         name:"Docker",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/docker/docker-original.svg"
+                                        icon: `${iconUrl}/docker/docker-original.svg`
                                 },
                                 {
                                         name:"Kubernetes",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/kubernetes/kubernetes-original.svg"
+                                        icon: `${iconUrl}/kubernetes/kubernetes-original.svg`
                                 },
                                 {
                                         name: "Jenkins",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/jenkins/jenkins-original.svg"
+                                        icon: `${iconUrl}/jenkins/jenkins-original.svg`
                                 },
                                 {
                                         name: "nginx",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/nginx/nginx-original.svg"
+                                        icon: `${iconUrl}/nginx/nginx-original.svg`
                                 }
                         ]
                 },
@@ -73,15 +80,15 @@ function About(){
                         skills: [
                                 {
                                         name: "Java",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/java/java-original.svg"
+                                        icon: `${iconUrl}/java/java-original.svg`
                                 },
                                 {
                                         name: "C++",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/cplusplus/cplusplus-original.svg"
+                                        icon: `${iconUrl}/cplusplus/cplusplus-original.svg`
                                 },
                                 {
                                         name:"Python",
-                                        icon: "https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg"
+                                        icon: `${iconUrl}/python/python-original.svg`
                                 }
                         ]
                 }

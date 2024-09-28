@@ -8,7 +8,7 @@ function Home(){
                         <div className="flex flex-col justify-center gap-4 w-[50%] max-[600px]:w-[80%]">
                                 <div className="flex flex-col gap-1 ">
                                         <div>
-                                                HI THERE
+                                                HI THERE, I'M
                                         </div>
                                         <div className="text-3xl">
                                                 <span className="text-3xl text-[#156064]">MALAY</span> SINGH        
@@ -16,7 +16,7 @@ function Home(){
                                 </div>
 
                                 <div>
-                                        A B.Tech CSE student aspiring to become a Full-Stack Web Developer and create interactive experiences on the web.
+                                        A B.Tech CSE student aspiring to become a DevOps Engineer and create interactive experiences on the web.
                                 </div>
 
                                 <div className="flex gap-7 h-[50px] items-center">
@@ -26,7 +26,7 @@ function Home(){
                                         <div className="h-[100%]">
                                                 <a href="https://www.linkedin.com/in/malay4singh" target="_blank"><img className="h-[100%]" src="linkedin.svg" /></a>
                                         </div>
-                                        <a className="h-full flex items-center" href="https://drive.google.com/file/d/1uYpPO0rvCv2xIOnPDf-Wj2PiHcGvfIZ3/view?usp=sharing" target="_blank">
+                                        <a className="h-full flex items-center" href="https://drive.google.com/file/d/12Oy1sK8tOX0QmS2xNdu2ruw-7pvhkRj-/view?usp=sharing" target="_blank">
                                                 <div className="px-1 rounded bg-[#156064] text-[#fffff0] flex gap-2 h-[90%] items-center">
                                                         RESUME <img src="link.svg" width={'20px'} />
                                                 </div>
