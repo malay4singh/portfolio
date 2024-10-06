@@ -26,7 +26,7 @@ function Home(){
                                         <div className="h-[100%]">
                                                 <a href="https://www.linkedin.com/in/malay4singh" target="_blank"><img className="h-[100%]" src="linkedin.svg" /></a>
                                         </div>
-                                        <a className="h-full flex items-center" href="https://drive.google.com/file/d/12Oy1sK8tOX0QmS2xNdu2ruw-7pvhkRj-/view?usp=sharing" target="_blank">
+                                        <a className="h-full flex items-center" href="https://drive.google.com/file/d/1SjbhgE4z66qkqBaH3F8C8BnhCuZuqfnF/view?usp=sharing" target="_blank">
                                                 <div className="px-1 rounded bg-[#156064] text-[#fffff0] flex gap-2 h-[90%] items-center">
                                                         RESUME <img src="link.svg" width={'20px'} />
                                                 </div>
