@@ -1,25 +1,25 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Container from "./components/Container";
 import About from "./components/About";
 import Home from "./components/Home";
 import WorkExperience from "./components/WorkExperience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+// import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { useEffect, useState } from "react";
 
 function App() {
 
-        const location = useLocation();
+        // const location = useLocation();
 
-        const [previousPage, setPreviousPage] = useState<number>(0);
+        // const [previousPage, setPreviousPage] = useState<number>(0);
         const [currentPage, setCurrentPage] = useState<number>(1);
 
-        const isSmallScreen = window.innerWidth < 601;
+        // const isSmallScreen = window.innerWidth < 601;
 
         useEffect( () => {
                 const setPage = () => {
-                        setPreviousPage(currentPage);
+                        // setPreviousPage(currentPage);
                 }
 
                 setPage();
