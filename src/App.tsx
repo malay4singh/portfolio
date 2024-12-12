@@ -31,7 +31,7 @@ function App() {
 
                         <Route path="/" element={<Container setCurrentPage={setCurrentPage} />}>
 
-                                <Route path="*" element={<TransitionGroup>
+                                {/* <Route path="*" element={<TransitionGroup>
                                         <CSSTransition key={location.key} timeout={500} classNames={ isSmallScreen ? ( previousPage < currentPage ? "left" : "right" ) : ( previousPage < currentPage ? "up" : "down" ) }>
 
                                                 <Routes location={location}>
@@ -43,7 +43,13 @@ function App() {
                                                 </Routes>
 
                                         </CSSTransition>
-                                </TransitionGroup>} />
+                                </TransitionGroup>} /> */}
+
+                                                        <Route path="/home" element={<Home />} />
+                                                        <Route path="/about" element={<About />} />
+                                                        <Route path="/work" element={<WorkExperience />} />
+                                                        <Route path="/projects" element={<Projects />} />
+                                                        <Route path="/contact" element={<Contact />} />
                         
                         </Route>
                 </Routes>
