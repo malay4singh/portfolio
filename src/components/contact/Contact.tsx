@@ -2,7 +2,7 @@ import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { TextField } from '@mui/material';
 import { useState } from 'react';
-import axios from '../api/axios';
+import axios from '../../api/axios';
 import Message from './Message';
 
 interface Message {

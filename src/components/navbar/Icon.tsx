@@ -25,8 +25,8 @@ function Icon(props: IconProps){
         const empty = {}
 
         return(
-                <div onClick={handleClick} className="p-3 rounded" style={props.name == page ? design : empty}>
-                        <img className="hover:cursor-pointer w-[50px] min-[1700px]:w-[65px] max-[600px]:w-[30px]" src={props.name+".svg"} />
+                <div onClick={handleClick} className="p-3 rounded hover:cursor-pointer" style={props.name == page ? design : empty}>
+                        <img className="w-[50px] min-[1700px]:w-[65px] max-[600px]:w-[30px]" src={props.name+".svg"} />
                 </div>
         )
 }

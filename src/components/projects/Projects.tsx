@@ -59,7 +59,7 @@ function Projects(){
 
         return(
                 <div className='h-screen w-[90vw] flex items-center justify-center max-[600px]:w-screen max-[600px]:h-[90dvh] max-[1200px]:items-start max-[600px]:py-10 scrollable relative'>
-                        <div className='w-[75%] flex flex-col gap-6 z-0'>
+                        <div className='w-[80%] flex flex-col gap-6 z-0 b'>
                                 <div className={`text-3xl ${visibility ? "invisible" : "visible"}`}>
                                         My Projects
                                 </div>

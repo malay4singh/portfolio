@@ -17,7 +17,7 @@ function Office(props: OfficeInterface) {
                                         {props.work.name}
                                 </div>
 
-                                <a href={props.work.cert} target="_blank"><div className="border=2 border-black flex items-center bg-[#156064] text-[#fffff0] gap-2 p-1 rounded text-xs">
+                                <a href={props.work.cert} target="_blank"><div className="flex items-center bg-[#156064] text-[#fffff0] gap-2 p-1 rounded text-xs">
                                         CERTIFCATE <img src="link.svg" width={'20px'} />
                                 </div></a>
                         </div>
