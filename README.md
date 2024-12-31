@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.ibb.co/2KYv2qJ/portfolio.png" alt="portfolio" border="0"><br>
+  <img src="https://i.ibb.co/9YB3vmm/portfolio.png" alt="portfolio" border="0"><br>
   <a href="https://www.malaysingh.com">
       <img src="https://img.shields.io/badge/open-blue?style=for-the-badge" alt="Open Portfolio" />
   </a>
