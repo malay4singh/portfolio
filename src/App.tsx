@@ -3,7 +3,7 @@ import Container from "./components/Container";
 import About from "./components/about/About";
 import Home from "./components/Home";
 import WorkExperience from "./components/work/WorkExperience";
-import Projects from "./components/projects/Projects";
+// import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { useEffect, useState } from "react";
@@ -40,7 +40,7 @@ function App() {
                                                         <Route path="/about" element={<About />} />
                                                         <Route path="/certifications" element={<Certification />} />
                                                         <Route path="/work" element={<WorkExperience />} />
-                                                        <Route path="/projects" element={<Projects />} />
+                                                        {/* <Route path="/projects" element={<Projects />} /> */}
                                                         <Route path="/contact" element={<Contact />} />
                                                 </Routes>
 

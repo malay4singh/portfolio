@@ -12,8 +12,8 @@ function Navbar(props: NavbarProps){
                                 <Icon name="about" setCurrentPage={props.setCurrentPage} pageValue={2} />
                                 <Icon name="certifications" setCurrentPage={props.setCurrentPage} pageValue={3} />
                                 <Icon name="work" setCurrentPage={props.setCurrentPage} pageValue={4} />
-                                <Icon name="projects" setCurrentPage={props.setCurrentPage} pageValue={5} />
-                                <Icon name="contact" setCurrentPage={props.setCurrentPage} pageValue={6} />
+                                {/* <Icon name="projects" setCurrentPage={props.setCurrentPage} pageValue={5} /> */}
+                                <Icon name="contact" setCurrentPage={props.setCurrentPage} pageValue={5} />
                         </div>
                 </nav>
         )
