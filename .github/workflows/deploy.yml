@@ -2,7 +2,7 @@ name: Portfolio Build and Deploy to Dockerhub
 
 on: 
   push: 
-    branches: [main]
+    branches: [client]
   
 jobs: 
   build: 
