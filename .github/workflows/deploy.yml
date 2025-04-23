@@ -1,15 +1,40 @@
-name: Webhook Trigger
+name: Portfolio Build and Deploy to Dockerhub
 
-on:
-  push:
-    branches:
-      - client
-
-jobs:
-  trigger-webhook:
+on: 
+  push: 
+    branches: [main]
+  
+jobs: 
+  build: 
     runs-on: ubuntu-latest
 
     steps:
-    - name: Send webhook to server
-      run: |
-        curl -X POST http://malaysingh.com:3000 -H "Content-Type: application/json" -d '{"event": "push", "branch": "${{ github.ref_name }}", "repo": "${{ github.repository }}" }'
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+        env: 
+          VITE_AXIOS_URL: ${{ secrets.VITE_AXIOS_URL }}
+
+      - name: Docker Hub Login
+        uses: docker/login-action@v3
+        with: 
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and push
+        uses: docker/build-and-push-action@v6
+        with:
+          push: true
+          tags: malay4singh/portfolio:latest
