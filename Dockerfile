@@ -1,3 +1,3 @@
-FROM httpd
-COPY httpd.conf /usr/local/apache2/conf/conf.d/rewrite.conf
-COPY ./dist /usr/local/apache2/htdocs/
+FROM nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./dist /usr/share/nginx/html
