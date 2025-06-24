@@ -1,8 +1,7 @@
 name: Portfolio Build and Deploy to Dockerhub
 
 on: 
-  push: 
-    branches: [client]
+  workflow_dispatch:
   
 jobs: 
   build: 
