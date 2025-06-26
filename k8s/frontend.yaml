@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-frontend-deployment
+  namespace: portfolio
+  labels:
+    app: portfolio-frontend
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: portfolio-frontend
+
+  template:
+    metadata:
+      labels:
+        app: portfolio-frontend 
+    spec:
+      containers:
+      - name: frontend
+        image: malay4singh/portfolio-frontend
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-frontend-service
+  namespace: portfolio
+
+spec:
+  type: ClusterIP
+
+  selector:
+    app: portfolio-frontend
+
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+
+---
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: portfolio-gateway
+  namespace: portfolio
+
+spec:
+  selector:
+    istio: ingressgateway 
+    
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: portfolio-virtualservice
+  namespace: portfolio
+
+spec:
+  hosts:
+  - "*"
+
+  gateways:
+  - portfolio-gateway
+
+  http:
+  - route:
+    - destination:
+        host: portfolio-frontend-service.portfolio.svc.cluster.local
+        port:
+          number: 80
