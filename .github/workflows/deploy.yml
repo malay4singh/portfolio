@@ -1,14 +1,13 @@
-name: Portfolio Build and Deploy to Kubernetes
+name: Portfolio Build and Push to DockerHub
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   build-and-deploy:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -29,7 +28,3 @@ jobs:
           context: ./frontend
           push: true
           tags: malay4singh/portfolio-frontend
-
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f k8s/frontend.yaml
