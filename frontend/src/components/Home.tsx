@@ -34,7 +34,7 @@ function Home() {
           </div>
           <a
             className="h-full flex items-center"
-            href="https://drive.google.com/file/d/156X1Ga_dttiLWqk4Pr2PMhCXkaHHQosp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1INpIKt8HJTA7p9odUvBYthvmF2L0F-_C/view?usp=sharing"
             target="_blank"
           >
             <div className="px-1 rounded bg-[#156064] text-[#fffff0] flex gap-2 h-[90%] items-center">
