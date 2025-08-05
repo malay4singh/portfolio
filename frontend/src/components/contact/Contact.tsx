@@ -1,67 +1,8 @@
-import * as Yup from "yup";
-import { useFormik } from "formik";
 import { TextField } from "@mui/material";
-import { useState } from "react";
-import axios from "../../api/axios";
-import Message from "./Message";
-
-interface Message {
-  name: string;
-  phone: string;
-  email: string;
-  message: string;
-}
+import { useForm } from "@formspree/react";
 
 function Contact() {
-  const [alert, setAlert] = useState<string>("");
-  const [isDisplayed, setIsDisplayed] = useState<boolean>(false);
-  const [icon, setIcon] = useState<string>("send.svg");
-
-  const initialValues: Message = {
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  };
-
-  const validationSchema = Yup.object().shape({
-    name: Yup.string().required(),
-    phone: Yup.string().required(),
-    email: Yup.string().required(),
-    message: Yup.string().required(),
-  });
-
-  const formik = useFormik({
-    initialValues,
-    validationSchema,
-    onSubmit: async (values, { resetForm }) => {
-      try {
-        await axios.post("/portfolio", values);
-
-        setAlert("Message Sent Successfully");
-        setIsDisplayed(true);
-        setIcon("check.svg");
-
-        resetForm({
-          values: {
-            name: "",
-            phone: "",
-            email: "",
-            message: "",
-          },
-        });
-      } catch {
-        setAlert("Couldn't Send Message");
-        setIsDisplayed(true);
-        setIcon("cross.svg");
-      }
-    },
-  });
-
-  const removeMessage = () => {
-    setIsDisplayed(false);
-    setIcon("send.svg");
-  };
+  const [formValues, handleSubmit] = useForm("xpwlylob");
 
   return (
     <div className=" h-screen w-[90vw] flex justify-center items-center max-[600px]:w-screen max-[600px]:h-[90dvh] max-[600px]:items-start max-[600px]:py-10 scrollable">
@@ -93,64 +34,60 @@ function Contact() {
             </div>
 
             <form
-              onSubmit={formik.handleSubmit}
+              onSubmit={(e) => {
+                handleSubmit(e).then(() => {
+                  (e.target as HTMLFormElement).reset();
+                });
+              }}
               className="flex flex-col w-[80%] mx-auto gap-2 max-[600px]:w-full max-[600px]:gap-4"
             >
               <TextField
-                label="Name*"
+                label="Name"
                 variant="outlined"
                 name="name"
                 size="small"
-                value={formik.values.name}
-                onChange={formik.handleChange}
-                error={formik.touched.name && Boolean(formik.errors.name)}
               />
 
               <TextField
-                label="Phone Number*"
+                label="Phone Number"
                 variant="outlined"
                 name="phone"
                 size="small"
-                value={formik.values.phone}
-                onChange={formik.handleChange}
-                error={formik.touched.phone && Boolean(formik.errors.phone)}
               />
 
               <TextField
-                label="Email Address*"
+                label="Email Address"
                 variant="outlined"
                 name="email"
                 size="small"
-                value={formik.values.email}
-                onChange={formik.handleChange}
-                error={formik.touched.email && Boolean(formik.errors.email)}
               />
 
               <TextField
-                label="Message*"
+                label="Message"
                 variant="outlined"
                 name="message"
                 size="small"
                 multiline
                 minRows={4}
-                value={formik.values.message}
-                onChange={formik.handleChange}
-                error={formik.touched.message && Boolean(formik.errors.message)}
               />
 
               <button
                 className="bg-[#156064] w-[fit-content] py-1 px-2 rounded text-[#fffff0] flex item-center gap-2"
                 type="submit"
+                disabled={formValues.submitting}
               >
-                <img src={icon} width={"20px"} />
-                SEND
+                {formValues.submitting ? (
+                  <div className="w-4 h-4 border-2 border-t-transparent border-white rounded-full animate-spin"></div>
+                ) : (
+                  <img src="send.svg" width="20px" />
+                )}
+                {formValues.submitting ? "SENDING..." : "SEND"}
               </button>
             </form>
           </div>
         </div>
       </div>
 
-      {isDisplayed && <Message message={alert} onClose={removeMessage} />}
     </div>
   );
 }
